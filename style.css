@@ -1,4 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+/*
+
+headings : Georgia
+text : Lato
+
+green : #01996D
+darkgreen : #245852
+nav black : #292929
+paragraph black : 424242
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700&family=Lato:wght@300;400;700;900&display=swap");
+
+:root {
+  --green: #01996d;
+  --darkgreen: #245852;
+  --black: #000000;
+  --mediumblack: #292929;
+  --lightblack: #424242;
+}
 
 * {
   margin: 0;
@@ -7,10 +27,107 @@
 }
 
 body {
-  background-color: #636364;
+  background-color: white;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* Navigation style */
+
+nav {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+  align-items: center;
+}
+
+nav .container a h1 {
+  color: var(--green);
+  font-weight: 900;
+  margin-right: 3em;
+}
+
+nav .container ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex: 2;
+  align-items: center;
+  margin: 0 3em;
+}
+
+li a {
+  color: var(--mediumblack);
+}
+
+.cta {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cta a {
+  margin-left: 2em;
+  color: var(--mediumblack);
+}
+
+a.btn {
+  padding: 0.8em 1.4em;
+  background-color: var(--green);
+  color: white;
+  border-radius: 0.2em;
+}
+
+/* Header section style */
+
+header {
+  height: 100vh;
+  background-image: url("https://source.unsplash.com/CwTBt6jyagQ/1600x900");
+  background-position-y: 20%;
+}
+
+header .container {
+  height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+}
+
+header .container h2 {
+  color: var(--green);
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+}
+
+header .container h2 span {
+  display: block;
+}
+
+header .container p {
+  color: var(--lightblack);
+  line-height: 1.6rem;
+  margin-bottom: 2.8em;
+}
+
+header .container p span {
+  display: block;
+}
+
+header .container .btn {
+  width: fit-content;
 }
