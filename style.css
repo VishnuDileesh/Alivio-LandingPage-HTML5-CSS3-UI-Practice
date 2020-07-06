@@ -29,11 +29,20 @@ paragraph black : 424242
 body {
   background-color: white;
   font-family: "Lato", sans-serif;
+  color: var(--lightblack);
 }
 
 a {
   text-decoration: none;
   color: black;
+}
+
+p {
+  line-height: 1.6rem;
+}
+
+img {
+  width: 100%;
 }
 
 .container {
@@ -97,7 +106,7 @@ a.btn {
 header {
   height: 100vh;
   background-image: url("https://source.unsplash.com/CwTBt6jyagQ/1600x900");
-  background-position-y: 20%;
+  background-position-y: 35%;
 }
 
 header .container {
@@ -107,14 +116,16 @@ header .container {
   flex-direction: column;
 }
 
-header .container h2 {
+h2,
+h3 {
   color: var(--green);
   font-family: "Frank Ruhl Libre", serif;
   font-size: 3rem;
   margin-bottom: 0.5em;
 }
 
-header .container h2 span {
+h2 span,
+h3 span {
   display: block;
 }
 
@@ -130,4 +141,96 @@ header .container p span {
 
 header .container .btn {
   width: fit-content;
+  width: -moz-fit-content;
+}
+
+main .header {
+  display: flex;
+  padding: 4em 0;
+  margin-top: 4em;
+}
+
+.header-left,
+.header-right {
+  flex: 1;
+}
+
+.header-left h3 {
+  font-size: 2.5rem;
+}
+
+h3 span.number {
+  display: inline-block;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  min-height: 90vh;
+}
+
+section h4 {
+  font-family: "Frank Ruhl Libre", serif;
+  color: var(--black);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+section h4 {
+  position: relative;
+}
+
+section h4.one:before {
+  content: "01";
+  position: absolute;
+  font-size: 5rem;
+  left: 20%;
+  bottom: -70%;
+  color: var(--green);
+  opacity: 0.2;
+  z-index: -2;
+}
+
+section h4.two:before {
+  content: "02";
+  position: absolute;
+  font-size: 5rem;
+  left: 10%;
+  bottom: -70%;
+  color: var(--green);
+  opacity: 0.2;
+  z-index: -2;
+}
+
+section h4.three:before {
+  content: "03";
+  position: absolute;
+  font-size: 5rem;
+  left: 25%;
+  bottom: -70%;
+  color: var(--green);
+  opacity: 0.2;
+  z-index: -2;
+}
+
+.main-grid section:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section p {
+  margin-bottom: 3em;
+}
+
+section img {
+  min-height: 25em;
+  border-radius: 0.5em;
 }
