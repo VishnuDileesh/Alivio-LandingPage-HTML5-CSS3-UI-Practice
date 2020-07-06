@@ -304,3 +304,86 @@ section.bg-sec {
 #play-btn:focus {
   border: none;
 }
+
+/* white section */
+
+section .white-sec {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  padding: 12em 0;
+}
+
+.white-right {
+  margin-left: 2em;
+}
+
+.white-right h5 {
+  font-size: 1.2rem;
+}
+
+.white-left {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.left-image {
+  max-width: 28rem;
+  min-height: 26rem;
+  max-height: 26rem;
+  background-color: rgb(1, 153, 109, 0.2);
+  border-radius: 0.6em;
+}
+
+.left-image img {
+  max-height: 26rem;
+  object-fit: contain;
+}
+
+/* card */
+
+.left-card {
+  max-width: 20rem;
+  max-height: 19rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em 2em;
+  position: absolute;
+  left: 10%;
+  bottom: -15%;
+  background-color: white;
+  border-radius: 0.2em;
+  box-shadow: -1px 1px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.left-card img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50px;
+  background-color: rgb(1, 153, 109, 0.2);
+  margin-bottom: 0.5em;
+}
+
+.left-card h5,
+h4,
+h3 {
+  color: black;
+  margin-bottom: 0.5em;
+}
+
+.left-card h4 {
+  font-size: 0.7rem;
+}
+
+.left-card h3 {
+  font-size: 0.9rem;
+  margin-bottom: 1em;
+}
+
+.left-card ul li {
+  font-size: 0.75rem;
+  color: black;
+}
