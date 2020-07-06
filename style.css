@@ -45,6 +45,11 @@ img {
   width: 100%;
 }
 
+video {
+  max-width: 50rem;
+  border-radius: 1em;
+}
+
 .container {
   width: 80%;
   margin: auto;
@@ -241,4 +246,61 @@ section p {
 section img {
   max-height: 25em;
   border-radius: 0.5em;
+}
+
+/* video player section */
+
+button.hide-btn {
+  display: none;
+}
+
+section.bg-sec {
+  background-color: var(--darkgreen);
+}
+
+.bg-sec .container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  padding: 10em 0;
+}
+
+.bg-left {
+  align-self: center;
+}
+
+.bg-left h4 {
+  color: white;
+  font-size: 2.3rem;
+  text-align: start;
+  margin-bottom: 0.5em;
+}
+
+.bg-left h4 span {
+  display: block;
+}
+
+.bg-left p {
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* video player */
+
+.video-player {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#play-btn {
+  position: absolute;
+  left: 50%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#play-btn:focus {
+  border: none;
 }

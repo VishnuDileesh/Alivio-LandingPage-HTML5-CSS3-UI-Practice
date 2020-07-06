@@ -99,5 +99,36 @@ Design : https://caphe.sfo2.cdn.digitaloceanspaces.com/assets/images/alivio-land
         </section>
       </div>
     </main>
+
+    <section class="bg-sec">
+      <div class="container">
+        <div class="bg-left">
+          <h4>Let's hear about <span>Kayla's success story</span></h4>
+          <p>See how well Alivio works in a real customer's life.</p>
+
+          <a class="btn" href="#">Let's get started</a>
+        </div>
+        <div class="video-player">
+          <video id="customer-video" src="assets/customer-review.mp4"></video>
+          <button onclick="playPause()" id="play-btn" type="button">
+            <img src="./assets/play-white.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      video = document.getElementById("customer-video");
+      play_btn = document.getElementById("play-btn");
+
+      function playPause() {
+        video.play();
+        play_btn.classList.add("hide-btn");
+
+        video.onended = function () {
+          play_btn.classList.remove("hide-btn");
+        };
+      }
+    </script>
   </body>
 </html>
