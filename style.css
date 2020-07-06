@@ -168,11 +168,14 @@ h3 span.number {
   align-items: center;
 }
 
+/* Main Grid Section */
+
 .main-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2em;
+  gap: 5em;
   min-height: 90vh;
+  padding: 2em 0;
 }
 
 section h4 {
@@ -224,6 +227,11 @@ section h4.three:before {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-top: 16em;
+}
+
+.main-grid section:last-child {
+  margin-top: 3em;
 }
 
 section p {
@@ -231,6 +239,6 @@ section p {
 }
 
 section img {
-  min-height: 25em;
+  max-height: 25em;
   border-radius: 0.5em;
 }
