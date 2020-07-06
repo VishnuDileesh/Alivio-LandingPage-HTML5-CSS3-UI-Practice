@@ -387,3 +387,37 @@ h3 {
   font-size: 0.75rem;
   color: black;
 }
+
+/* Footer section */
+
+footer {
+  background-color: var(--darkgreen);
+  padding: 2em 0;
+  height: 65vh;
+}
+
+footer .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+footer h1 {
+  color: white;
+  font-weight: 900;
+  margin-right: 3em;
+}
+
+footer ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+footer ul li a {
+  font-size: 1.2rem;
+  color: white;
+}
